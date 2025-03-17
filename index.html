@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/loading.css">
+    <link rel="stylesheet" href="style/respon.css">
+    <script src="java/loading.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="asset/loading1.gif" alt="Loading...">
+    </div>
+    <!-- Start Header-->
+      <div class="header-container">
+        <p><a href="index.html" style="text-decoration: none; color: inherit;">PT BUMI KOMODITAS RAYA</a></p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="product.html">Our Product</a></li>
+                <li><a href="vision.html">Our Vision</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </nav>
+      </div>
+     <!--End Header-->
+
+     <!--Start Section Upper-->
+        <section class="upper">
+        <div class="section-upper">
+            <div class="slider">
+                <div class="slides">
+                    <li class="slide active"><a href="about.html" style="text-decoration: underline; color: white;">About Company</a></li>
+                    <li class="slide"><a href="product.html" style="text-decoration: underline; color: white;">Our Product</a></li>
+                    <li class="slide"><a href="vision.html" style="text-decoration: underline; color: white;">Our Vision</a></li>
+                    <li class="slide"><a href="visit.html" style="text-decoration: underline; color: white;">Visit Us</a></li>
+                </div>
+        </div>
+        </div>
+        <script>
+             let index = 0;
+
+            function nextSlide() {
+            const slides = document.querySelector(".slides");
+            index = (index + 1) % 4; // Ganti angka 3 sesuai jumlah slide
+            slides.style.transform = `translateX(-${index * 100}%)`;
+            }
+            setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
+          </script>
+        </section>
+     <!--End Section Upper-->
+
+    <!--Start upper Middle-->
+<section class="middle">
+    <div class="hidden">
+      <div class="section-middle">
+        <div class="hidden slide-right">
+            <id class="visi">
+            <div style="flex: flex; flex-direction: row;">
+                <h1 style="font-size: 40px; text-decoration: underline;text-align: center;">Visi</h1>
+                <h3>Menjadikan perusahaan kopi terkemuka di Indonesia yang menyajikan kopi...</h3>
+                <a href="vision.html">
+                    <button type="submit" style="text-decoration: underline; font-family: 'Times New Roman', Times, serif; font-size: 20px">Read more</button>
+                </a>
+            </div>
+            </id>
+        </div>
+        <div class="hidden slide-left">
+            <id class="misi">
+            <div style="flex: flex; flex-direction: row;">
+                <h1 style="font-size: 40px;text-decoration: underline; text-align: center;">Misi</h1>
+                <h3>Menghasilkan kopi berkualitas tinggi dengan menggunakan biji kopi segar dan proses pengolahan yang baik....</h3>
+                <a href="vision.html">
+                    <button type="submit" style="text-decoration: underline; font-family: 'Times New Roman', Times, serif; font-size: 20px;">Read more</button>
+                </a>
+            </div>
+            </id>
+        </div>
+        </div>
+    </div>
+    <script>
+        function revealOnScroll() {
+            let element = document.querySelectorAll(".hidden");
+            let windowHeight = window.innerHeight;
+
+            element.forEach(element => {
+                let elementTop = element.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight -100) {
+                    element.classList.add("show")
+                }
+            }
+                
+            )
+        }
+        window.addEventListener("scroll", revealOnScroll);
+    </script>
+</section>
+    <!--End upper Middle-->
+
+
+<!--Start Middle Section-->
+<section>
+    <div class="penjelasan-pt">
+        <div class="isi-pt">
+                <h1 style="font-size: 50px;color: white;">Profil Perusahaan</h1>
+                    <p style="font-size: 20px; color: white;">
+                    PT BUMI KOMODITAS RAYA adalah perusahaan yang bergerak di bidang produksi dan distribusi
+                    biji kopi berkualitas tinggi. Didirikan pada tahun 2025,
+                    perusahaan kami berkomitmen untuk menghadirkan kopi terbaik dengan
+                    cita rasa khas Indonesia yang kaya akan aroma dan karakter unik.</p>
+                    <a href="about.html">
+                    <button type="submit" style="text-decoration: underline; font-family: 'Times New Roman', Times, serif; font-size: 20px;margin-bottom: auto;">Read More</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Middle Section-->
+
+<!--visit Start-->
+    <section>
+        <div class="visit">
+            <h1 style="font-size: 40px;">Silahkan kunjungi kami di alamat berikut</h1>
+            <ul class="address">
+                <li>📍 Jl. Telkom No.5, RT.001/RW.005, Padurenan, Kec. Mustika Jaya, Kota Bks, Jawa Barat 17166</li>
+                <li><a href="mailto:bumikomoditasraya@gmail.com" style="color: white; text-decoration: none;"></a>📧: bumikomoditasraya@gmail.com</a></li>
+                <li><a href="https://wa.me/6285715188687" style="color: white; text-decoration: none;">📞: 0895621047836</a></li>
+            </ul>
+            <a href="visit.html">
+            <button type="submit" style="text-decoration: underline; font-family: 'Times New Roman', Times, serif; font-size: 25px; margin-bottom: auto;">Find More</button>
+            </a>
+        </div>
+    </section>
+<!--visit End-->
+
+<!-- Footer Start -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h2>PT BUMI KOMODITAS RAYA</h2>
+            <p>Menjadi perusahaan kopi terkemuka dengan kualitas terbaik.</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <ul>
+                <li>📍 Jl. Telkom No.5, Kota Bekasi</li>
+                <li>📧 bumikomoditasraya@gmail.com</li>
+                <li>📞 085715188687</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Ikuti Kami</h3>
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 PT BUMI KOMODITAS RAYA. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Footer End -->
+</body>
+</html>

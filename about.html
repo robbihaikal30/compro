@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Company</title>
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/loading.css">
+    <script src="java/loading.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="asset/loading1.gif" alt="Loading...">
+    </div>
+    <!-- Start Header-->
+      <div class="header-container">
+        <p><a href="about.html" style="text-decoration: none; color: inherit;">About Company</a></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Our Product</a></li>
+                <li><a href="vision.html">Our Vision</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </nav>
+      </div>
+     <!--End Header-->
+
+<!--Start Middle Section-->
+<section>
+    <div class="penjelasan-pt">
+        <div class="isi-pt">
+                <h1 style="font-size: 50px;color: white;">Profil Perusahaan</h1>
+                    <p style="font-size: 20px; color: white;">
+                    PT BUMI KOMODITAS RAYA adalah perusahaan yang bergerak di bidang produksi dan distribusi
+                    biji kopi berkualitas tinggi. Didirikan pada tahun 2025,
+                    perusahaan kami berkomitmen untuk menghadirkan kopi terbaik dengan
+                    cita rasa khas Indonesia yang kaya akan aroma dan karakter unik.</p>
+                    <p style="font-size: 20px; color: white;">
+                        Dengan mengutamakan proses pengolahan yang modern dan ramah lingkungan, PT BUMI KOMODITAS RAYA tidak hanya
+                        menghadirkan biji kopi berkualitas tinggi tetapi juga berkontribusi pada keberlanjutan industri kopi di Indonesia.
+                        Kami percaya bahwa kopi bukan sekadar minuman, tetapi juga bagian dari budaya dan tradisi yang harus dilestarikan.
+                        Oleh karena itu, kami terus berusaha untuk memberikan pengalaman kopi terbaik kepada pelanggan, baik di dalam
+                        maupun luar negeri.
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Middle Section-->
+
+<!--Foto start-->
+<section class="background-about">
+<div class="foto-container">
+    <div class="foto-kanan">
+    <img src="asset/biji kopi 1.jpeg" alt="biji kopi 1" class="hidden hidden-right">
+    <img src="asset/biji kopi 2.jpeg" alt="biji kopi 2" class="hidden hidden-right">
+    <img src="asset/biji kopi 3.jpeg" alt="biji kopi 3" class="hidden hidden-right">
+    </div>
+    <div class="foto-kiri">
+    <img src="asset/biji kopi 4.jpeg" alt="biji kopi 4" class="hidden hidden-left">
+    <img src="asset/gudang 2.jpeg" alt="gudang 2" class="hidden hidden-left">
+    <img src="asset/gudang 1.jpeg" alt="gudang 1" class="hidden hidden-left">
+    </div>
+</div>
+</div>
+
+<script>
+    function revealOnScroll() {
+        let element = document.querySelectorAll(".hidden");
+        let windowHeight = window.innerHeight;
+
+        element.forEach(element => {
+            let elementTop = element.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight -100) {
+                element.classList.add("show")
+            }
+        }
+            
+        )
+    }
+    window.addEventListener("scroll", revealOnScroll);
+</script>
+</section>
+<!--Foto End-->
+
+<!-- Footer Start -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h2>PT BUMI KOMODITAS RAYA</h2>
+            <p>Menjadi perusahaan kopi terkemuka dengan kualitas terbaik.</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <ul>
+                <li>📍 Jl. Telkom No.5, Kota Bekasi</li>
+                <li>📧 bumikomoditasraya@gmail.com</li>
+                <li>📞 085715188687</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Ikuti Kami</h3>
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://instagram.com">Instagram</a> |
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 PT BUMI KOMODITAS RAYA. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+</body>
+</html>

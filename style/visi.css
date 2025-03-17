@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2E2B1;
+}
+
+.header-container {
+    background-color: #493628;
+    padding: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    background-color: #F2E2B1;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-container p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: solid;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 15px;
+}
+
+.product-info h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 1em;
+    color: #777;
+}
+
+.price {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #493628; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-content, .footer-contact, .footer-social {
+    width: 30%;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    color: #ffd700; /* Warna emas */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
